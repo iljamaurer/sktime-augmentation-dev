@@ -1,4 +1,9 @@
 # Augmenter Development Repo
+### Load Subrepos
+```
+git submodule update --recursive
+```
+
 ## Docker
 ### Build
 ```
