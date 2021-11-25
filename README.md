@@ -2,6 +2,7 @@
 ### Load Subrepos
 ```
 git submodule update --recursive
+git checkout sequential_augmentation
 ```
 
 ## Docker
@@ -16,7 +17,7 @@ docker build . -t sktime-dev
 
 ### Run
 ```
-docker run -ti -v ${PWD}/src:/code sktime-dev /bin/bash
+docker run -ti -v ${PWD}:/code sktime-dev /bin/bash
 ```
 
 ## Unit Tests
