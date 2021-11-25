@@ -1,7 +1,7 @@
 # Augmenter Development Repo
 ### Load Subrepos
 ```
-git submodule update --recursive
+git submodule update --init --recursive
 cd sktime_dev
 git checkout sequential_augmentation
 ```
@@ -17,12 +17,22 @@ docker build . -t sktime-dev
 ```
 
 ### Run
+Linux
 ```
 docker run -ti -v ${PWD}:/code sktime-dev /bin/bash
 ```
+Windows
+```
+docker run -ti -v %cd%:/code sktime-dev /bin/bash
+```
+
 
 ## Unit Tests
 https://www.sktime.org/en/v0.4.2/contributing.html#unit-testing
+
+```
+cd /code/sktime_dev
+```
 
 all tests:
 ```
