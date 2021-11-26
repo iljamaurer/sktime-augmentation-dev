@@ -3,7 +3,7 @@
 ```
 git submodule update --init --recursive
 cd sktime_dev
-git checkout sequential_augmentation
+git checkout seq-augmentation
 ```
 
 ## Docker
