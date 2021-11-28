@@ -2,7 +2,7 @@
 ### Load Subrepos
 ```
 git submodule update --init --recursive
-cd sktime_dev
+cd sktime
 git checkout seq-augmentation
 ```
 
@@ -31,7 +31,7 @@ docker run -ti -v %cd%:/code sktime-dev /bin/bash
 https://www.sktime.org/en/v0.4.2/contributing.html#unit-testing
 
 ```
-cd /code/sktime_dev
+cd /code/sktime
 ```
 
 all tests:
