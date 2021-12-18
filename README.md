@@ -26,6 +26,13 @@ Windows
 docker run -ti -v %cd%:/code sktime-dev /bin/bash
 ```
 
+## Code quality checks
+after staging:
+```
+cd sktime
+pre-commit run -
+```
+
 
 ## Unit Tests
 https://www.sktime.org/en/v0.4.2/contributing.html#unit-testing
