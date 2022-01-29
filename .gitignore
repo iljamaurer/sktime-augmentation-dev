@@ -1,1 +1,4 @@
 *.pdf
+/img/
+Classifier_Capabilities.html
+/__pycache__/

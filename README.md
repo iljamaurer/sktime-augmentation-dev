@@ -30,7 +30,14 @@ docker run -ti -v %cd%:/code sktime-dev /bin/bash
 after staging:
 ```
 cd sktime
+```
+and
+```
 pre-commit run -
+```
+or
+```
+pre-commit run 
 ```
 
 
