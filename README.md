@@ -59,6 +59,16 @@ pytest sktime/transformations/
 ```
 
 
+## Build docs
+```
+cd /code/sktime
+```
+```
+make docs
+```
+
+
+
 ## Contribute
 https://www.sktime.org/en/latest/get_involved/contributing.html#contributing
 
