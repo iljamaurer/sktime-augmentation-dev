@@ -15,6 +15,7 @@ import pytest
 
 from sktime.datasets import load_basic_motions
 from sktime.transformations.series import augmenter as aug
+from sktime.transformations.panel.augmenter import PanelAugmenter
 
 
 def _load_test_data():
@@ -132,7 +133,16 @@ if __name__ == "__main__":
     # X, y = load_basic_motions()
     # X_single = X.iloc[0, 1]
     # aug.augmenter_pipeline([1, 2])
-    X = _load_test_data()
+    X, y = load_basic_motions()
+    # print(X.dim_1)
+    # print(X["dim_1"])
+    pa = PanelAugmenter(input_method="concat")
+    Xt = pa._transform(X)
+    print(Xt)
+    # print(np.size(Xt))
+
+
+def test_pipeline_tmp():
     aug_i = aug.InvertAugmenter()
     aug_r = aug.ReverseAugmenter()
     aug_list = [aug_i, aug_r]
